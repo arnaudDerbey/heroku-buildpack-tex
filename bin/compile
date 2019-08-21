@@ -71,12 +71,9 @@ fi
 build-step "Installing peers.press specific packages"
 
 
-tlmgr install xkeyval
-tlmgr install collectbox
-tlmgr install ifoddpage
-tlmgr install varwidth
-tlmgr install babel
-tlmgr install caption
+tlmgr install minifp
+tlmgr install url
+tlmgr install oberdiek
 
 build-step "Updating installed packages..."
 tlmgr update --all

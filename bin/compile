@@ -92,6 +92,10 @@ tlmgr install abstract
 tlmgr install titlesec
 tlmgr install fancyhdr
 tlmgr install xkeyval
+tlmgr install collectbox
+tlmgr install ifoddpage
+tlmgr install varwidth
+tlmgr install babel
 
 
 build-step "Updating installed packages..."

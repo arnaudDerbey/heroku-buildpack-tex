@@ -70,28 +70,32 @@ fi
 # for some reason the above block of code doesn't work.
 build-step "Installing Open Journals-specific packages"
 
-tlmgr install collection-xetex
-tlmgr install marginnote
 tlmgr install xcolor
-tlmgr install preprint
-tlmgr install etoolbox
-tlmgr install titlesec
-tlmgr install pgf
+tlmgr install multirow
+tlmgr install colortbl
+tlmgr install adjustbox
+tlmgr install amsmath
+tlmgr install xparse
+tlmgr install changepage
+tlmgr install tikz
+tlmgr install blindtext
+tlmgr install graphicx
+tlmgr install uni8
+tlmgr install mathpazo
+tlmgr install fontenc
+tlmgr install microtype
+tlmgr install geometry
 tlmgr install caption
-tlmgr install tcolorbox
-tlmgr install environ
-tlmgr install trimspaces
-tlmgr install seqsplit
-tlmgr install biblatex
-tlmgr install logreq
-tlmgr install xstring
-tlmgr install mathspec
-tlmgr install fontspec
-tlmgr install xkeyval
 tlmgr install booktabs
-tlmgr install fancyvrb
-tlmgr install latexmk
-tlmgr install listings
+tlmgr install lettrine
+tlmgr install enumitem
+tlmgr install titling
+tlmgr install hyperref
+tlmgr install multicol
+tlmgr install abstract
+tlmgr install titlesec
+tlmgr install fancyhdr
+tlmgr install ragged2e
 
 build-step "Updating installed packages..."
 tlmgr update --all

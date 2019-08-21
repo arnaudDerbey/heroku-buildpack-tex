@@ -75,7 +75,6 @@ tlmgr install multirow
 tlmgr install colortbl
 tlmgr install adjustbox
 tlmgr install amsmath
-tlmgr install xparse
 tlmgr install changepage
 tlmgr install tikz
 tlmgr install blindtext

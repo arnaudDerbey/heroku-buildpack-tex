@@ -70,27 +70,7 @@ fi
 # for some reason the above block of code doesn't work.
 build-step "Installing peers.press specific packages"
 
-tlmgr install xcolor
-tlmgr install multirow
-tlmgr install colortbl
-tlmgr install adjustbox
-tlmgr install amsmath
-tlmgr install changepage
-tlmgr install pgf
-tlmgr install blindtext
-tlmgr install graphics
-tlmgr install latex-uni8
-tlmgr install mathpazo
-tlmgr install microtype
-tlmgr install geometry
-tlmgr install booktabs
-tlmgr install lettrine
-tlmgr install enumitem
-tlmgr install hyperref
-tlmgr install tools
-tlmgr install abstract
-tlmgr install titlesec
-tlmgr install fancyhdr
+
 tlmgr install xkeyval
 tlmgr install collectbox
 tlmgr install ifoddpage

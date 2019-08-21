@@ -55,11 +55,22 @@ if [ ! "$(which pdflatex)" ]; then
 
     ./install-tl --repository="$TEXLIVE_REPOSITORY" --profile="$PROF"
 fi
+ build-step "cleaninstall TeX Live..."
 
-build-step "Updating TeX Live..."
+    PROF=$BIN_DIR/../conf/texlive.profile
+    {
+      echo "TEXDIR $TEXLIVE_HOME";
+      echo "TEXMFCONFIG $TEXLIVE_HOME/var/texmf-config";
+      echo "TEXMFHOME $TEXLIVE_HOME/var/texmf";
+      echo "TEXMFLOCAL $TEXLIVE_HOME/texmf-local";
+      echo "TEXMFSYSCONFIG $TEXLIVE_HOME/texmf-config";
+      echo "TEXMFSYSVAR $TEXLIVE_HOME/texmf-var";
+      echo "TEXMFVAR $TEXLIVE_HOME/var/texmf-var";
+    } >> "$PROF"
 
-tlmgr option repository "$TEXLIVE_REPOSITORY"
-tlmgr update --self
+    cd "$TEXLIVE_HOME"
+
+    ./install-tl --repository="$TEXLIVE_REPOSITORY" --profile="$PROF"
 
 # install user-provided-packages
 if [ -f "$BUILD_DIR/texlive.packages" ]; then

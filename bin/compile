@@ -91,7 +91,7 @@ tlmgr install tools
 tlmgr install abstract
 tlmgr install titlesec
 tlmgr install fancyhdr
-tlmgr install ragged2e
+tlmgr install ms
 
 build-step "Updating installed packages..."
 tlmgr update --all

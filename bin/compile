@@ -76,7 +76,7 @@ tlmgr install collectbox
 tlmgr install ifoddpage
 tlmgr install varwidth
 tlmgr install babel
-
+tlmgr install caption
 
 build-step "Updating installed packages..."
 tlmgr update --all

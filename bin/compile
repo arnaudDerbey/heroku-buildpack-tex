@@ -68,7 +68,7 @@ if [ -f "$BUILD_DIR/texlive.packages" ]; then
 fi
 
 # for some reason the above block of code doesn't work.
-build-step "Installing Open Journals-specific packages"
+build-step "Installing peers.press specific packages"
 
 tlmgr install xcolor
 tlmgr install multirow

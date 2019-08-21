@@ -91,6 +91,8 @@ tlmgr install tools
 tlmgr install abstract
 tlmgr install titlesec
 tlmgr install fancyhdr
+tlmgr install xkeyval
+
 
 build-step "Updating installed packages..."
 tlmgr update --all

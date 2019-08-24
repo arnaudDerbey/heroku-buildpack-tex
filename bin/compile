@@ -70,10 +70,8 @@ fi
 # for some reason the above block of code doesn't work.
 build-step "Installing peers.press specific packages"
 
-
 tlmgr install minifp
-tlmgr install url
-tlmgr install oberdiek
+
 
 build-step "Updating installed packages..."
 tlmgr update --all
